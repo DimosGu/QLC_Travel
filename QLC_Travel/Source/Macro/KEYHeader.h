@@ -8,5 +8,6 @@
 
 #ifndef Project_KEYHeader_h
 #define Project_KEYHeader_h
-
+#define DT_APPKEY @"eaafa2d65968417ea9f4b3a65008050b"
+#define BAIDU_APPKEY @"8d1ec4215aa82c50b92efddcf2c479ef"
 #endif

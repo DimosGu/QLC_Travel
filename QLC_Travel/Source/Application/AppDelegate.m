@@ -16,16 +16,26 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [DataTangAPI setAppKey:DT_APPKEY];
     
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    
-    
-    
+           
     return YES;
 }
+//旅游路线调用函数
+//    NSDictionary *dict = @{@"apitype":@"restaurant",
+//                           @"apicode":@"queryRestList", @"distance":@"1000", @"glat":@"39.98907255353696",
+//                           @"glng":@"116.3335823774831"};
+//    [DataTangAPI requestData:dict
+//             completionBlock:^(NSDictionary *results) {
+//                 NSLog(@"result:%@",results); }];
+
+    
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

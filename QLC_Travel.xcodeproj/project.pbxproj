@@ -12,6 +12,10 @@
 		2E75B0BF1BCF4B040092C4A6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E75B0BD1BCF4B040092C4A6 /* LaunchScreen.xib */; };
 		2E75B0CB1BCF4B050092C4A6 /* QLC_TravelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E75B0CA1BCF4B050092C4A6 /* QLC_TravelTests.m */; };
 		2E75B0E61BCF4B4A0092C4A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E75B0D71BCF4B4A0092C4A6 /* AppDelegate.m */; };
+		2EE21E6E1BCF88EA004B2A46 /* libDataTangAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE21E6C1BCF88EA004B2A46 /* libDataTangAPI.a */; };
+		2EE21E6F1BCF88EA004B2A46 /* 数+SDK集成文档(iOS).pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2EE21E6D1BCF88EA004B2A46 /* 数+SDK集成文档(iOS).pdf */; };
+		2EE21E761BCFAB18004B2A46 /* TravelRouteTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE21E751BCFAB18004B2A46 /* TravelRouteTools.m */; };
+		2EE21E791BCFAD3D004B2A46 /* WeatherTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE21E781BCFAD3D004B2A46 /* WeatherTools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,13 @@
 		2E75B0E21BCF4B4A0092C4A6 /* KEYHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KEYHeader.h; sourceTree = "<group>"; };
 		2E75B0E31BCF4B4A0092C4A6 /* URLHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLHeader.h; sourceTree = "<group>"; };
 		2E75B0E71BCF4B610092C4A6 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		2EE21E6B1BCF88EA004B2A46 /* DataTangAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataTangAPI.h; sourceTree = "<group>"; };
+		2EE21E6C1BCF88EA004B2A46 /* libDataTangAPI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libDataTangAPI.a; sourceTree = "<group>"; };
+		2EE21E6D1BCF88EA004B2A46 /* 数+SDK集成文档(iOS).pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "数+SDK集成文档(iOS).pdf"; sourceTree = "<group>"; };
+		2EE21E741BCFAB18004B2A46 /* TravelRouteTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelRouteTools.h; sourceTree = "<group>"; };
+		2EE21E751BCFAB18004B2A46 /* TravelRouteTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelRouteTools.m; sourceTree = "<group>"; };
+		2EE21E771BCFAD3D004B2A46 /* WeatherTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherTools.h; sourceTree = "<group>"; };
+		2EE21E781BCFAD3D004B2A46 /* WeatherTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherTools.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EE21E6E1BCF88EA004B2A46 /* libDataTangAPI.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +75,7 @@
 		2E75B0A21BCF4B040092C4A6 = {
 			isa = PBXGroup;
 			children = (
+				2EE21E6A1BCF88EA004B2A46 /* DataTang_IOS_SDK_V1.0 */,
 				2E75B0AD1BCF4B040092C4A6 /* QLC_Travel */,
 				2E75B0C71BCF4B040092C4A6 /* QLC_TravelTests */,
 				2E75B0AC1BCF4B040092C4A6 /* Products */,
@@ -119,7 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				2E75B0D51BCF4B4A0092C4A6 /* Application */,
-				2E75B0D81BCF4B4A0092C4A6 /* BaseClass */,
+				2EE21E731BCFAAF7004B2A46 /* BaseClass */,
 				2E75B0D91BCF4B4A0092C4A6 /* CodeClass */,
 				2E75B0DA1BCF4B4A0092C4A6 /* DataBase */,
 				2E75B0DB1BCF4B4A0092C4A6 /* EnNetWork */,
@@ -141,13 +154,6 @@
 				2E75B0D71BCF4B4A0092C4A6 /* AppDelegate.m */,
 			);
 			path = Application;
-			sourceTree = "<group>";
-		};
-		2E75B0D81BCF4B4A0092C4A6 /* BaseClass */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = BaseClass;
 			sourceTree = "<group>";
 		};
 		2E75B0D91BCF4B4A0092C4A6 /* CodeClass */ = {
@@ -215,6 +221,27 @@
 			children = (
 			);
 			path = TheThird;
+			sourceTree = "<group>";
+		};
+		2EE21E6A1BCF88EA004B2A46 /* DataTang_IOS_SDK_V1.0 */ = {
+			isa = PBXGroup;
+			children = (
+				2EE21E6B1BCF88EA004B2A46 /* DataTangAPI.h */,
+				2EE21E6C1BCF88EA004B2A46 /* libDataTangAPI.a */,
+				2EE21E6D1BCF88EA004B2A46 /* 数+SDK集成文档(iOS).pdf */,
+			);
+			path = DataTang_IOS_SDK_V1.0;
+			sourceTree = "<group>";
+		};
+		2EE21E731BCFAAF7004B2A46 /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				2EE21E741BCFAB18004B2A46 /* TravelRouteTools.h */,
+				2EE21E751BCFAB18004B2A46 /* TravelRouteTools.m */,
+				2EE21E771BCFAD3D004B2A46 /* WeatherTools.h */,
+				2EE21E781BCFAD3D004B2A46 /* WeatherTools.m */,
+			);
+			path = BaseClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,6 +326,7 @@
 			files = (
 				2E75B0BF1BCF4B040092C4A6 /* LaunchScreen.xib in Resources */,
 				2E75B0BC1BCF4B040092C4A6 /* Images.xcassets in Resources */,
+				2EE21E6F1BCF88EA004B2A46 /* 数+SDK集成文档(iOS).pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +346,8 @@
 			files = (
 				2E75B0E61BCF4B4A0092C4A6 /* AppDelegate.m in Sources */,
 				2E75B0B11BCF4B040092C4A6 /* main.m in Sources */,
+				2EE21E791BCFAD3D004B2A46 /* WeatherTools.m in Sources */,
+				2EE21E761BCFAB18004B2A46 /* TravelRouteTools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +469,11 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/QLC_Travel/Source/PrefixHeader.pch";
 				INFOPLIST_FILE = QLC_Travel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DataTang_IOS_SDK_V1.0",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -451,6 +486,11 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/QLC_Travel/Source/PrefixHeader.pch";
 				INFOPLIST_FILE = QLC_Travel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DataTang_IOS_SDK_V1.0",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
